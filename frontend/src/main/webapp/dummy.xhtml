@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3c.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:p="http://primefaces.org/ui"
-	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+	xmlns:p="http://primefaces.org/ui">
 <h:head>
 </h:head>
 <h:body>
-	<p:inputText value="#{dummyBean.msg}" pt:placeholder="Watermark here" />
+	<div>
+		<span>Valore da RequestScopedBean: </span>
+		<p:inputText value="#{dummyBean.msg}"></p:inputText>
+	</div>
+	<div>
+		<span>Valore da SpringBean: </span>
+		<p:inputText value="#{dummySpringBean}"></p:inputText>
+	</div>
 </h:body>
 </html>
